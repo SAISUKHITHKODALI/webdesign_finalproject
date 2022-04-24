@@ -19,7 +19,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: #aaa6a6;
     height: 70px;
     justify-content: justify;
     color: black;
@@ -39,7 +39,7 @@ ul li{
     text-align: right;
     flex: 1;
     padding: 20px;
-    margin-left: 700px;
+    margin-left: 500px;
 }
 .navhead{
     padding: 20px;
