@@ -3,67 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TREKKING TOURS</title>
+    <title>GO TREKKING</title>
     <link rel="stylesheet" href="index.css">
     <script src="./index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
     <!-- NAV BAR -->
     <div class="top_section">
         <nav class="navbar">
             <img src="gotrekking_logo.jpg" width="95%" height="98%">
             <h1 class="navhead">GOTREKKING <br> <p class="line1"></p></h1>
+            <a href="#" class="togglebutton" onclick="myfunction()">
+                <span class="togglebar"></span>
+                <span class="togglebar"></span>
+                <span class="togglebar"></span>
+                <span class="togglebar"></span>
+            </a>
         
             <ul class="navlinks">
-                <li><a href="#TABS">TOP TREKS</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-                <li><a href="#">UPCOMING TREKS</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-                <li><a href="#">REVIEWS</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-                <li><a href="#">CONTACT US</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="#tabs">TopTreks</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="#upcomingtreks">UpcomingTreks</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="#reviews">Reviews</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="#contactus">ContactUs</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </ul>
         </nav>
     </div>
+
+    <!--main page with title-->
     <div class="main_page">
         <div class="background">
             <img src="main.jpg" alt="" width="100%" height="auto">
             <div class="main_moto">GOTREKKING <br>We Are Here For Your Safest Treks</div>
         </div>
         <div class="home_page">
-            <h1 class="homepageheader">TREKKING IN INDIA</h1>
+            <h1 class="homepageheader">TREKKING IN INDIA</h1><br><br>
             <p class="homepageparagraph">Trekking take you to very close to the natural landscape. Trekking also gives you unique chance to explore the culture and the people of mountain range in India. Trekking in India is very famous throughout the world. The trekkers from remotest corner of the world come to take life time experience of Indian Trekking Treks. North Indian trekking destination is somewhat similar to paradise for trekkers. The famous trekking destinations of India are Ladakh, Himachal, Sikkim and Garhwal. All these are in Himalayan belt. Himalayas are taken as the best trekking destination in all over the world. The Himalayan foothills are just ideal for trekking, Hiking and Camping offering energetic out-door people a different and exciting option for a adventure holiday.</p>
-        </div><br><br><br><br>
-    </div>
-    <div class="TABS">
+        </div>
+    </div><br><br><br><br>
+
+    <!--tabs section consisting top trekkings in india-->
+    <div id="tabs" class="tabs">
         <div>
             <h1 class="toptreks_section">TOP TREKS</h1>
-        </div>
+        </div><br><br><br><br>
         <div class="toptreks_tabs">
-            <div class="toptreks_buttontab">
+            <div class="toptreks_buttontab" style="font-size: 0;">
                 <button class="tab_link" id="brahmatal" onclick="brahmatal()">BRAHMATAL TREK</button>
                 <button class="tab_link" id="dayara" onclick="dayara()">DAYARA BUGYAL TREK</button>
                 <button class="tab_link" id="sandakphu" onclick="sandakphu()">SANDAKPHU PHALUT TREK</button>
                 <button class="tab_link" id="tarsar" onclick="tarsar()">TARSAR MARSAR TREK</button>
             </div>
-                <p class="tabcontent" id="T"></p>
+
+            <div class="tabcontent">
+                <p id="TAB"></p>
+
+            </div>
         </div>
     </div><br><br><br><br>
+
+    <!--upcoming treks section-->
+    <div>
+        <h1 id="upcomingtreks" class="upcoming_treks">UPCOMING TREKS</h1>
+    </div><br><br>
+    <div  class="upcomingtreks">
+        <div class="trek">
+            <div class="text">
+                <h3>Kedarkantha Trek</h3>
+            </div>
+            <div class="image">
+                <a href="#"><img src="Kedarkantha-Trek.jpg" width="250" height="250"></a>
+            </div>
+        </div>
+        <div class="trek">
+            <div class="text">
+                <h3>Hampta Pass Trek</h3>
+            </div>
+            <div class="image">
+                <a href="#"><img src="Hampta-Pass-Trek.jpg" width="250" height="250"></a>
+            </div>
+        </div>
+        <div class="trek">
+            <div class="text">
+                <h3>Gidara Bugyal Trek</h3>
+            </div>
+            <div class="image">
+                <a href="#"><img src="Gidara-Bugyal-Trek.jpg" width="250" height="250"></a>
+            </div>
+            
+        </div>
+        
+    </div><br><br><br><br>
+
+    <!--reviews section -->
+    <div class="reviews" id="reviews">
+        <h1>REVIEWS</h1>
+    </div><br><br>
+    <div class="reviews_section">
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <div class="mySlides fade">
+            <p>RANADHEER NARESH<br>It was AWESOME. I really didn't expect it to be this well organized. From equipment, staying locations and food.</p>
+        </div>
+        
+        <div class="mySlides fade">
+            <P>PRANAY THOTA<br>This was my 3rd trek, and I've done all the 3 treks with GOTREKKINGwould like to do more treks with GOTREKKING.</P>
+        </div>
+        
+        <div class="mySlides fade">
+            <P>HEMANTH AREMANDA<br>It was my first trek and I must say that I decided my 2nd, 3rd and 4th treks while trekking this one!!</P>
+        </div>
+        
+        
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+    </div><br><br><br><br>
+
+    <!-- contact us section through email-->   
+    <div id="contactus">
+        <div class="contactus_header">
+            <h3>CONTACT US</h3>
+        </div><br><br>
+        <div class="contactus_section">
+            <form action="https://postmail.invotes.com/send"
+                method="post" id="email_form" style="margin: auto;text-align: center;">
+
+                <input type="text" name="subject" placeholder="Subject*" size="50px"style="padding: 10px;" ><br><br>
+                <input type="text" placeholder="Enter Your Mail Id*" size="50px"style="padding: 10px;" ><br><br>
+                <input type="text" placeholder="Contact Number" size="50px"style="padding: 10px;" ><br><br>
+                <textarea name="text" placeholder="Intrested Trek*" size="50px"style="padding: 10px;width:380px"></textarea><br><br>
+
+                <input type="hidden" name="access_token" value="owfe026ndvq6xqz1mrqyqhz7" />
+                <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+
+                <input id="submit_form" type="submit" value="Submit" style="size: 50px; padding: 10px; width: 400px;" />
+
+
+                <p><a href="https://postmail.invotes.com" target="_blank"></a></p>
+            </form>
+        </div>
+    </div><br><br><br><br>
+
+    <!--footer section-->
+    <footer>
+        <div class="footer_container1">
+            <h4>Follow Us On</h4><br>
+            <div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <div class="footer_container2">
+            <img src="gotrekkinglogo_1.jpeg" alt="" width="120" height="120">
+            <h3>GOTREKKING</h3>
+        </div>
+        <div class="footer_container3">
+            <h4>ADDRESS :</h4><br>
+            <h5>3338, Av. Lacombe<br>Montreal, QC H3T1L8.<br>Mobile Number: (514) 208-7786 </h5>
+        </div>
+       
+    </footer>
+    <div class="footer_container4" style="background-color: grey; margin: auto; text-align: center;">
+        <h5>&copy; 2022 ALL Rights Reserved To GOTREKKING.com</h5>
+    </div>
 
 
 
 
 
     <script>
+        const togglebutton = document.getElementsByClassName('togglebutton')[0]
+        const navbarlinks = document.getElementsByClassName('navlinks')[0]
+
+        togglebutton.addEventListener('click', () => {
+            navbarlinks.classList.toggle('active')
+        })
+        
+
+
+
         function brahmatal(){
-            document.getElementById('T').innerHTML = "The highest point on this trek is the Brahmatal Top at 12,250 ft. It is a stunning trek.Brahmatal is a great trek to do solo as well. In December, January, and February, there is a lot of snow on the trail. The trek runs until the end of April."
+            document.getElementById('TAB').innerHTML = "The highest point on this trek is the Brahmatal Top at 12,250 ft. It is a stunning trek.Brahmatal is a great trek to do solo as well. In December, January, and February, there is a lot of snow on the trail. The trek runs until the end of April."
         }
         function dayara(){
-            document.getElementById('T').innerHTML = "Dayara Bugyal has all the elements of a perfect Himalayan trek — superb forests, beautiful campsites, ancient villages, thrilling climbs to high points, wonderful mountain views and few of the best alpine meadows of Uttarakhand. These meadows are completely blanketed in snow in winter. All of this in an easy-moderate trek– a gift we rarely see."
+            document.getElementById('TAB').innerHTML = "Dayara Bugyal has all the elements of a perfect Himalayan trek — superb forests, beautiful campsites, ancient villages, thrilling climbs to high points, wonderful mountain views and few of the best alpine meadows of Uttarakhand. These meadows are completely blanketed in snow in winter. All of this in an easy-moderate trek– a gift we rarely see."
         }
         function sandakphu(){
-            document.getElementById('T').innerHTML = "The Sandakphu Phalut trek is one of the few treks from where you can see 4 out of 5 of the tallest mountains in the world.A unique feature of this trek are the tea houses you will find. They are similar to hotels and restaurants, but are indescribably different. You will have to stay in one, to experience the warmth of a tea house."
+            document.getElementById('TAB').innerHTML = "The Sandakphu Phalut trek is one of the few treks from where you can see 4 out of 5 of the tallest mountains in the world.A unique feature of this trek are the tea houses you will find. They are similar to hotels and restaurants, but are indescribably different. You will have to stay in one, to experience the warmth of a tea house."
         }
         function tarsar(){
-            document.getElementById('T').innerHTML = "The Tarsar Marsar trek in Kashmir is the prettiest trek in India. The only other trek that comes close to its beauty is the Kashmir Great Lakes trek.The trek takes you from one lake to the other, from Tarsar to Marsar, and then to Sundarsar. You also get to camp beside two of these stunning lakes."
+            document.getElementById('TAB').innerHTML = "The Tarsar Marsar trek in Kashmir is the prettiest trek in India. The only other trek that comes close to its beauty is the Kashmir Great Lakes trek.The trek takes you from one lake to the other, from Tarsar to Marsar, and then to Sundarsar. You also get to camp beside two of these stunning lakes."
         }
+
+            var submitButton = document.getElementById("submit_form");
+            var form = document.getElementById("email_form");
+            form.addEventListener("submit", function (e) {
+                    setTimeout(function() {
+                    submitButton.value = "Sending...";
+                    submitButton.disabled = true;
+                }, 1);
+            });
+
+            let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
 
     </script>
     

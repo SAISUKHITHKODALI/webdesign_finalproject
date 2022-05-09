@@ -14,6 +14,7 @@
     height: 12px;
     color: black;
 }
+
 .navbar{
     position: relative;
     top: 0;
@@ -35,11 +36,12 @@ ul li{
     
 }
 .navlinks{
+    font-size: larger;
     display: flex;
     text-align: right;
     flex: 1;
     padding: 20px;
-    margin-left: 350px;
+    margin-left: 525px;
 }
 .navhead{
     padding: 20px;
@@ -58,44 +60,166 @@ ul li{
 .home_page{
     text-align: center;
 }
-.line2{
-    /* width: 175px;
-    height: 3px; */
-    /* background: rgb(243, 6, 53);
-    border-radius: 60% ; */
-}
+/*tabs section styling*/
+/*.tabs{
+    text-align: center;
+}*/
 .toptreks_section{
-    margin: 0 auto;
+    margin: auto;
+    text-align: center;
     max-width: auto;
     height: 13px;
-    text-align: center;
-    position: absolute;
-    font-size: 210x;
-    background: rgb(243, 6, 53);
-    border-radius: 60% ;
+   
 }
-.toptreks_tabs{
+/*.toptreks_tabs{
     overflow: hidden;
     border: 2px solid #cccccc;
     background-color: rgb(179, 175, 171);
-}
+}*/
 .toptreks_buttontab{
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
+    margin: auto;
+    background-color:grey;
+    padding: 20px;
     cursor: pointer;
-    font-size: 17px;
-    padding: 14px 16px;
+    width: 800px;
     transition: 0.3s;
 }
-.toptreks_buttontab:hover{
-    background-color: #ccc;
+.tab_link{
+    
+border: none;
+padding: 10px;
+color: white;
+background-color:grey;
+
 }
-.tab_content{
-    display: none;
-    padding: 6px 12px;
-    border: 2px solid #ccc;
-    border-top: none;
+.tab_link:hover{
+    background-color:white;
+    color: black;
+    text-decoration: none;
 }
+
+/*upcoming treks section*/
+.upcoming_treks{
+    text-align: center;
+}
+.upcomingtreks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    row-gap: 20px;
+}
+ a{
+    text-decoration: none;
+    color: black;
+}
+.trek:hover{
+    transform: translateY(10px);
+    transition-duration: 0.5s;
+}
+.tabcontent{
+    padding: 20px 20px 20px 2px;
+    width: 818px;
+    background-color: black;
+    color: white;
+    margin: auto;
+    
+}
+/*reviews section styling*/
+.reviews{
+    text-align: center;
+}
+.reviews_section{
+    margin: auto;
+    position: relative;
+    max-width: 1000px;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    width: auto;
+    padding: 16px;
+    color: rgb(46, 46, 46);
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.fade{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*contact us styling*/
+.contactus_header{
+    text-align: center;
+}
+
+
+
+
+
+
+/*footer styling*/
+.fa {
+    padding: 10px;
+    border-radius: 5px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram{
+    background: #cb2027;
+    color: white;
+  }
+footer{
+    background-color: rgb(211, 209, 209);
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    width: 98.5%;
+    padding: 10px;
+}
+.footer_container1{
+    text-align: left;
+}
+.footer_container2{
+    text-align: center;
+}
+.footer_container3{
+    margin-left: 225px;
+}
+/**/
  
